@@ -1,0 +1,35 @@
+/* Hero banner */
+
+.hero h1 {margin: 0; padding: 0; font-size: 2.1rem; color: white;}
+
+/* KPI cards and the Acceptance Probability card */
+[data-testid="stMetric"] {background: color-mix(in srgb, var(--primary) 10%, transparent);
+       border-left: 5px solid var(--primary); padding: 14px 16px; border-radius: 12px;}
+.st-key-result_metric [data-testid="stMetricValue"] {font-size: 2.4rem;}
+
+/* Key Takeaway */
+.takeaway {background: color-mix(in srgb, var(--primary) 12%, transparent);
+       border-left: 5px solid var(--primary); padding: 18px 20px; border-radius: 12px;}
+.takeaway h4 {margin: 0 0 8px 0;}
+
+/* Tabs, form and sliders */
+.stTabs [data-baseweb="tab"] {font-size: 1.05rem; padding: 10px 18px;}
+[data-testid="stForm"] {border: none; padding: 0;}
+[data-testid="stSliderTickBarMin"], [data-testid="stSliderTickBarMax"] {display: none;}
+[data-testid="stSlider"] {padding-top: 6px; padding-bottom: 6px;}
+
+/* Predict button */
+[data-testid="stFormSubmitButton"] button {
+    background: var(--primary); color: white; font-size: 0.95rem; font-weight: 600;
+    padding: 0.4rem 1.4rem; border: none; border-radius: 8px; margin-top: 8px;
+    transition: transform .15s, box-shadow .15s, background .15s;
+}
+[data-testid="stFormSubmitButton"] button p {color: white;}
+[data-testid="stFormSubmitButton"] button:hover {
+    background: color-mix(in srgb, var(--primary) 80%, black);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+/* Chart images */
+[data-testid="stImage"] img {border-radius: 12px;}
