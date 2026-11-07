@@ -45,14 +45,14 @@ Job-Acceptance-Prediction-System/
 │   ├── eda_6_interview.png
 │   └── eda_7_aptitude.png
 ├── screenshots/
-│   └── dashboard_overview.png       # add your dashboard screenshot here
-├── dashboard.py                     # Streamlit dashboard
-├── job_acceptance_system.py         # cleaning, SQL load and model training
-├── style.css                        # dashboard styling
-├── HR_Job_Placement_Dataset.csv     # raw dataset
-├── Cleaned_Dataset.csv              # cleaned dataset
-├── job_acceptance_model.pkl         # trained model and threshold
-├── EDA_Report_Job_Acceptance.docx   # written EDA report
+│   └── dashboard_overview.png       
+├── dashboard.py                     
+├── job_acceptance_system.py         
+├── style.css                        
+├── Raw_Dataset.csv                  
+├── Cleaned_Dataset.csv              
+├── job_acceptance_model.pkl        
+├── EDA_Report_Job_Acceptance.docx   
 ├── requirements.txt
 └── README.md
 ```
@@ -83,18 +83,6 @@ streamlit run dashboard.py
 ```
 
 Run the command from the project folder so Streamlit finds the `.streamlit` theme folder.
-
-### Re-train the model (optional)
-
-1. Keep `HR_Job_Placement_Dataset.csv` in the project folder, or update its path in `job_acceptance_system.py`.
-2. Replace `your_password` with your local MySQL password in `job_acceptance_system.py` (it appears twice). Do not commit passwords to GitHub.
-3. Run the script to clean the data, load it into the `job_acceptance_db` database (table `candidates`), write `Cleaned_Dataset.csv`, train the model and save `job_acceptance_model.pkl`:
-
-   ```bash
-   python job_acceptance_system.py
-   ```
-
-4. Start the dashboard with `streamlit run dashboard.py`.
 
 ## Data Cleaning & Feature Engineering
 
