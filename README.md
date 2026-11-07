@@ -6,7 +6,20 @@ An end-to-end machine learning project that predicts whether a job candidate wil
 
 This project analyses 50,000 candidate records covering academic scores, interview performance, skills match, experience, salary expectations and job details. A Gradient Boosting model estimates each candidate's acceptance probability, and a Streamlit dashboard lets recruiters explore the data and predict outcomes for new candidates.
 
-**Workflow:** Raw CSV → Data Cleaning & Feature Engineering (Python) → MySQL Database → Cleaned CSV → Exploratory Data Analysis (Power BI) → Model Training (scikit-learn) → Streamlit Dashboard.
+## Workflow
+
+```mermaid
+flowchart LR
+   A[Raw CSV Dataset] --> B[Python Data Cleaning<br/>and Feature Engineering]
+   B --> C[(MySQL<br/>candidates table)]
+   B --> D[Cleaned CSV]
+   D --> E[Power BI EDA Charts]
+   D --> F[EDA Report]
+   D --> G[Model Training<br/>scikit-learn]
+   G --> H[Saved Model<br/>.pkl]
+   E --> I[Streamlit Dashboard]
+   H --> I
+```
 
 ## Features
 
