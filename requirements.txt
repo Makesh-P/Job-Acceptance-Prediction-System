@@ -1,0 +1,8 @@
+pandas>=3.0
+numpy
+scikit-learn==1.9.1
+joblib
+streamlit>=1.39
+pymysql
+cryptography
+SQLAlchemy
