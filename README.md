@@ -9,6 +9,7 @@ This project analyses 50,000 candidate records covering academic scores, intervi
 ## Dashboard Preview
 
 ![Job Acceptance Prediction Dashboard](screenshots/dashboard_overview.png)
+![Predict Candidate form](screenshots/prediction_form.png)
 
 ## Features
 
@@ -130,7 +131,7 @@ The cleaning process fills missing numerical values (SSC percentage, HSC percent
 
 The full written analysis is in [`EDA_Report_Job_Acceptance.docx`](EDA_Report_Job_Acceptance.docx). It covers all 50,000 candidates in six sections, each with a chart, a plain-language explanation and a note on where the data is too thin to trust.
 
-| # | Analysis | Main finding |
+| S.No | Analysis | Main finding |
 |---|---|---|
 | 1 | Interview score vs acceptance | Acceptance rises from about 1% at a score of 50 to 21% at 60, 46% at 70 and 69% at 80. The technical score does most of the work, and no candidate with a technical score below 60 was placed. |
 | 2 | Skills match vs acceptance | Acceptance climbs from about 21% at a 55% match to about 49% at 100%. No candidate with a skills match below 55% was placed, and even a perfect match is no guarantee. |
