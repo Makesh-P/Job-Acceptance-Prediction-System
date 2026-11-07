@@ -116,17 +116,19 @@ Test-set performance at the 0.40 threshold:
 | F1 Score | 83.32% |
 | ROC-AUC | 0.9612 |
 
-Exploratory Data Analysis
+## Exploratory Data Analysis
 
-The full written analysis is in EDA_Report_Job_Acceptance.docx. It covers all 50,000 candidates in six sections, each with a chart, a plain-language explanation and a note on where the data is too thin to trust.
+The full written analysis is in [`EDA_Report_Job_Acceptance.docx`](EDA_Report_Job_Acceptance.docx). It covers all 50,000 candidates in six sections, each with a chart, a plain-language explanation and a note on where the data is too thin to trust.
 
-#	Analysis	Main finding
-1	Interview score vs acceptance	Acceptance rises from about 1% at a score of 50 to 21% at 60, 46% at 70 and 69% at 80. The technical score does most of the work, and no candidate with a technical score below 60 was placed.
-2	Skills match vs acceptance	Acceptance climbs from about 21% at a 55% match to about 49% at 100%. No candidate with a skills match below 55% was placed, and even a perfect match is no guarantee.
-3	Company tier	Almost no difference: 29.94% (Tier 1), 30.42% (Tier 2) and 30.54% (Tier 3).
-4	Experience	Senior candidates are placed 59.75% of the time, Juniors 41.21% and Freshers 18.69%. Freshers are 57% of all candidates.
-5	Competition level	Low and medium competition are the same (31.87% and 31.90%), while high competition drops to 23.78%.
-6	Correlation heatmap	Technical score (0.40), interview average (0.34) and years of experience (0.33) have the strongest links to placement. Expected CTC is negative (-0.16), and age, certifications and academic percentages are about 0.00.
+| # | Analysis | Main finding |
+|---|---|---|
+| 1 | Interview score vs acceptance | Acceptance rises from about 1% at a score of 50 to 21% at 60, 46% at 70 and 69% at 80. The technical score does most of the work, and no candidate with a technical score below 60 was placed. |
+| 2 | Skills match vs acceptance | Acceptance climbs from about 21% at a 55% match to about 49% at 100%. No candidate with a skills match below 55% was placed, and even a perfect match is no guarantee. |
+| 3 | Company tier | Almost no difference: 29.94% (Tier 1), 30.42% (Tier 2) and 30.54% (Tier 3). |
+| 4 | Experience | Senior candidates are placed 59.75% of the time, Juniors 41.21% and Freshers 18.69%. Freshers are 57% of all candidates. |
+| 5 | Competition level | Low and medium competition are the same (31.87% and 31.90%), while high competition drops to 23.78%. |
+| 6 | Correlation heatmap | Technical score (0.40), interview average (0.34) and years of experience (0.33) have the strongest links to placement. Expected CTC is negative (-0.16), and age, certifications and academic percentages are about 0.00. |
+
 
 ## Dashboard
 
